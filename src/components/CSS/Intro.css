@@ -1,0 +1,58 @@
+/* src/components/CSS/Intro.css */
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+.intro-header {
+  width: 100%;
+  background-color: #a48cf0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.intro-datetime .time {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.intro-datetime .date {
+  font-size: 1rem;
+  color: white;
+}
+
+.intro-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.intro-buttons button {
+  background-color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.intro-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 50px;
+  color: #a48cf0;
+}
+
+.intro-subtitle {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 2rem;
+}

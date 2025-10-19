@@ -1,0 +1,76 @@
+/* src/components/CSS/Register.css */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.title {
+  color: #a48cf0;
+  font-size: 2.5rem;
+  margin-top: 40px;
+}
+
+.register-card {
+  margin-top: 20px;
+  padding: 2rem;
+  background-color: #a48cf0;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.register-card h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.register-card input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.profile-placeholder {
+  width: 100px;
+  height: 80px;
+  background-color: #d3d3d3;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/847/847969.png");
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.register-card button {
+  background-color: white;
+  color: #a48cf0;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-top: 1rem;
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}

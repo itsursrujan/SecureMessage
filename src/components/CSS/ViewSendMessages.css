@@ -1,0 +1,164 @@
+/* src/components/CSS/ViewSendMessages.css */
+
+.chat-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.chat-header {
+  background-color: #a48cf0;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.chat-user p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.chat-user p:first-child {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.chat-user p:last-child {
+  font-size: 14px;
+}
+
+/* Chat body */
+.chat-body {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  word-break: break-word;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chat-bubble.sent {
+  align-self: flex-end;
+  background-color: #a48cf0;
+  color: white;
+  border-bottom-right-radius: 0;
+}
+
+.chat-bubble.received {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+  border-bottom-left-radius: 0;
+}
+
+.chat-bubble.spam-message {
+  background-color: #ffe5e5 !important;
+  color: #a10000;
+  border-left: 5px solid #ff0000;
+}
+
+.chat-time {
+  display: block;
+  font-size: 10px;
+  color: #555;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/* Input */
+.chat-input-area {
+  background-color: #a48cf0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #dcdcdc;
+}
+
+.file-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input-area input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  outline: none;
+}
+
+.send-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.spam-warning {
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .chat-bubble {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .chat-header,
+  .chat-input-area {
+    padding: 8px;
+  }
+
+  .back-btn {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  .chat-input-area input[type="text"] {
+    font-size: 14px;
+  }
+
+  .file-btn {
+    font-size: 14px;
+  }
+
+  .send-btn {
+    font-size: 20px;
+  }
+}
